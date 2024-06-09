@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/InterVariable.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@theme {
+  /* color */
+  /* general */
+  --color-zircon: rgb(154 205 203);
+  --color-cream: oklch(97.3% 0.086 120.3);
+  --color-bittersweet: rgb(254 95 85);
+  --color-lavender: rgb(204 201 220);
+
+  /* gunmetal */
+  --color-gunmetal-900: rgb(24 36 37);
+  --color-gunmetal-850: rgb(32 48 50);
+  --color-gunmetal-800: rgb(40 60 62);
+  --color-gunmetal-750: rgb(48 72 75);
+  --color-gunmetal-700: rgb(43 78 81);
+  --color-gunmetal-650: rgb(64 96 100);
+  --color-gunmetal-600: rgb(72 108 112);
+  --color-gunmetal-550: rgb(80 120 124);
+  --color-gunmetal-500: rgb(88 132 137);
+  --color-gunmetal-450: rgb(95 144 149);
+
+  /* mask */
+  background: radial-gradient(92.49% 84.86% at 50% 15.14%, #000 65.76%, #000 100%);
+
+  --radial-size-01: 50%;
+  --radial-size-02: 85%;
+
+  --image-mask-bottom: radial-gradient(var(--radial-size-01) var(--radial-size-02) at 50% 15%, #000 65%, transparent 100%);
+  --image-mask-top: radial-gradient(97.5% 80% at 50% 80%, #000 65%, transparent 100%);
+}
+
+@utilities {
+  .grid-rows-bento {
+    grid-template-rows: repeat(8, minmax(1fr, 144px));
+  }
+}
+
+:root {
+  font-family: 'Inter';
+  font-feature-settings: 'dlig' on, 'ss03' on;
+}
