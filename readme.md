@@ -1,4 +1,4 @@
-# Bento grid with CSS grid, @container queries and tailwind
+# Bento grid with CSS grid and tailwind
 The repository for the titled post. It’s a very basic setup.
 
 ## Setup
