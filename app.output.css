@@ -601,9 +601,6 @@
   .h-full {
     height: 100%;
   }
-  .min-h-full {
-    min-height: 100%;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -639,9 +636,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-row {
-    flex-direction: row;
   }
   .place-content-center {
     place-content: center;
@@ -861,7 +855,7 @@
 }
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/InterVariable.woff2") format('woff2');
+  src: url("fonts/InterVariable.woff2") format('woff2');
   font-display: swap;
   font-weight: 100 900;
 }
