@@ -28,7 +28,7 @@
   --color-gunmetal-450: rgb(95 144 149);
 
   /* mask */
-  --image-mask-bottom: radial-gradient(50% 85% at 50% 15%, #000 65%, transparent 100%);
+  --image-mask-bottom: radial-gradient(125% 85% at 50% 15%, #000 65%, transparent 100%);
   --image-mask-top: radial-gradient(97.5% 80% at 50% 80%, #000 65%, transparent 100%);
 }
 
