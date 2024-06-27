@@ -742,6 +742,9 @@
   .object-\[center_center\] {
     object-position: center center;
   }
+  .object-\[left_1rem\] {
+    object-position: left 1rem;
+  }
   .object-bottom {
     object-position: bottom;
   }
@@ -769,6 +772,9 @@
   .py-16 {
     padding-top: var(--spacing-16, 4rem);
     padding-bottom: var(--spacing-16, 4rem);
+  }
+  .pt-4 {
+    padding-top: var(--spacing-4, 1rem);
   }
   .px-4 {
     padding-left: var(--spacing-4, 1rem);
