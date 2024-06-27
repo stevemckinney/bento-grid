@@ -571,9 +571,6 @@
   .col-span-full {
     grid-column: 1 / -1;
   }
-  .row-span-1 {
-    grid-row: span 1 / span 1;
-  }
   .row-span-2 {
     grid-row: span 2 / span 2;
   }
@@ -589,14 +586,20 @@
   .grid {
     display: grid;
   }
-  .aspect-\[1\/1\] {
-    aspect-ratio: 1/1;
+  .aspect-304\/376 {
+    aspect-ratio: 304/376;
   }
   .aspect-\[100\/66\] {
     aspect-ratio: 100/66;
   }
-  .aspect-\[640\/376\] {
-    aspect-ratio: 640/376;
+  .aspect-\[304\/376\] {
+    aspect-ratio: 304/376;
+  }
+  .aspect-\[340\/376\] {
+    aspect-ratio: 340/376;
+  }
+  .aspect-\[345\/376\] {
+    aspect-ratio: 345/376;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
@@ -703,17 +706,53 @@
   .bg-gunmetal-900 {
     background-color: var(--color-gunmetal-900, rgb(24 36 37));
   }
+  .bg-red-200 {
+    background-color: var(--color-red-200, #fecaca);
+  }
+  .bg-red-800 {
+    background-color: var(--color-red-800, #991b1b);
+  }
   .fill-cream {
     fill: var(--color-cream, oklch(97.3% 0.086 120.3));
   }
   .object-none {
     object-fit: none;
   }
+  .object-\[1rem_1rem\] {
+    object-position: 1rem 1rem;
+  }
+  .object-\[1rem_calc\(100\%_-_1rem\)\] {
+    object-position: 1rem calc(100% - 1rem);
+  }
+  .object-\[1rem_center\] {
+    object-position: 1rem center;
+  }
   .object-\[50\%_60\%\] {
     object-position: 50% 60%;
   }
+  .object-\[center_-1rem\] {
+    object-position: center -1rem;
+  }
+  .object-\[center_1rem\] {
+    object-position: center 1rem;
+  }
+  .object-\[center_calc\(100\%_-_1rem\)\] {
+    object-position: center calc(100% - 1rem);
+  }
+  .object-\[center_center\] {
+    object-position: center center;
+  }
   .object-bottom {
     object-position: bottom;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-left-top {
+    object-position: left top;
+  }
+  .object-right-top {
+    object-position: right top;
   }
   .object-top {
     object-position: top;
@@ -770,6 +809,9 @@
   .ring-gunmetal-750 {
     --tw-ring-color: var(--color-gunmetal-750, rgb(48 72 75));
   }
+  .ring-red-700 {
+    --tw-ring-color: var(--color-red-700, #b91c1c);
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -805,11 +847,6 @@
       order: calc(infinity);
     }
   }
-  .max-md\:order-last {
-    @media (width < 48rem) {
-      order: calc(infinity);
-    }
-  }
   .sm\:col-span-6 {
     @media (width >= 40rem) {
       grid-column: span 6 / span 6;
@@ -835,74 +872,14 @@
       aspect-ratio: 1 / 1;
     }
   }
-  .md\:auto-rows-fr {
+  .md\:object-\[50\%_60\%\] {
     @media (width >= 48rem) {
-      grid-auto-rows: minmax(0, 1fr);
+      object-position: 50% 60%;
     }
   }
-  .md\:object-\[-2rem_center\] {
+  .md\:object-\[center_-1rem\] {
     @media (width >= 48rem) {
-      object-position: -2rem center;
-    }
-  }
-  .md\:object-\[-10\%_-10\%\] {
-    @media (width >= 48rem) {
-      object-position: -10% -10%;
-    }
-  }
-  .md\:object-\[-10\%_0\] {
-    @media (width >= 48rem) {
-      object-position: -10% 0;
-    }
-  }
-  .md\:object-\[-10\%_10\%\] {
-    @media (width >= 48rem) {
-      object-position: -10% 10%;
-    }
-  }
-  .md\:object-\[-10\%_bottom\] {
-    @media (width >= 48rem) {
-      object-position: -10% bottom;
-    }
-  }
-  .md\:object-\[-10\%_center\] {
-    @media (width >= 48rem) {
-      object-position: -10% center;
-    }
-  }
-  .md\:object-\[-10\%_top\] {
-    @media (width >= 48rem) {
-      object-position: -10% top;
-    }
-  }
-  .md\:object-\[-1rem_center\] {
-    @media (width >= 48rem) {
-      object-position: -1rem center;
-    }
-  }
-  .md\:object-\[1rem_center\] {
-    @media (width >= 48rem) {
-      object-position: 1rem center;
-    }
-  }
-  .md\:object-\[20\%_top\] {
-    @media (width >= 48rem) {
-      object-position: 20% top;
-    }
-  }
-  .md\:object-\[2rem_center\] {
-    @media (width >= 48rem) {
-      object-position: 2rem center;
-    }
-  }
-  .md\:object-\[100\%_top\] {
-    @media (width >= 48rem) {
-      object-position: 100% top;
-    }
-  }
-  .md\:object-\[left\] {
-    @media (width >= 48rem) {
-      object-position: left;
+      object-position: center -1rem;
     }
   }
   .md\:px-\[3\.5rem\] {
@@ -926,24 +903,14 @@
       grid-column: span 6 / span 6;
     }
   }
-  .lg\:row-span-2 {
+  .lg\:object-\[center_-1rem\] {
     @media (width >= 64rem) {
-      grid-row: span 2 / span 2;
-    }
-  }
-  .lg\:auto-rows-fr {
-    @media (width >= 64rem) {
-      grid-auto-rows: minmax(0, 1fr);
+      object-position: center -1rem;
     }
   }
   .xl\:col-span-3 {
     @media (width >= 80rem) {
       grid-column: span 3 / span 3;
-    }
-  }
-  .xl\:row-span-2 {
-    @media (width >= 80rem) {
-      grid-row: span 2 / span 2;
     }
   }
   .xl\:row-span-4 {
@@ -966,6 +933,21 @@
       grid-auto-rows: minmax(0, 1fr);
     }
   }
+  .xl\:object-\[center_-1rem\] {
+    @media (width >= 80rem) {
+      object-position: center -1rem;
+    }
+  }
+  .xl\:object-\[center_calc\(100\%_-_1rem\)\] {
+    @media (width >= 80rem) {
+      object-position: center calc(100% - 1rem);
+    }
+  }
+  .\32 xl\:auto-rows-fr {
+    @media (width >= 96rem) {
+      grid-auto-rows: minmax(0, 1fr);
+    }
+  }
   .\@\[17\.5rem\]\:flex-row {
     @container (width >= 17.5rem) {
       flex-direction: row;
@@ -974,6 +956,76 @@
   .\@\[17\.5rem\]\:items-center {
     @container (width >= 17.5rem) {
       align-items: center;
+    }
+  }
+  .\@xs\:aspect-\[340\/376\] {
+    @container (width >= 20rem) {
+      aspect-ratio: 340/376;
+    }
+  }
+  .\@xs\:object-\[center_1rem\] {
+    @container (width >= 20rem) {
+      object-position: center 1rem;
+    }
+  }
+  .\@sm\:aspect-\[640\/376\] {
+    @container (width >= 24rem) {
+      aspect-ratio: 640/376;
+    }
+  }
+  .\@sm\:aspect-square {
+    @container (width >= 24rem) {
+      aspect-ratio: 1 / 1;
+    }
+  }
+  .\@md\:aspect-304\/376 {
+    @container (width >= 28rem) {
+      aspect-ratio: 304/376;
+    }
+  }
+  .\@md\:aspect-\[340\/376\] {
+    @container (width >= 28rem) {
+      aspect-ratio: 340/376;
+    }
+  }
+  .\@md\:aspect-\[345\/376\] {
+    @container (width >= 28rem) {
+      aspect-ratio: 345/376;
+    }
+  }
+  .\@md\:aspect-\[640\/376\] {
+    @container (width >= 28rem) {
+      aspect-ratio: 640/376;
+    }
+  }
+  .\@md\:object-\[center_1rem\] {
+    @container (width >= 28rem) {
+      object-position: center 1rem;
+    }
+  }
+  .\@md\:object-\[center_60\%\] {
+    @container (width >= 28rem) {
+      object-position: center 60%;
+    }
+  }
+  .\@md\:object-center {
+    @container (width >= 28rem) {
+      object-position: center;
+    }
+  }
+  .\@md\:\[mask-image\:var\(--image-mask-top\)\] {
+    @container (width >= 28rem) {
+      mask-image: var(--image-mask-top);
+    }
+  }
+  .\[1328px\]\:auto-rows-fr {
+    &:is(1328px) {
+      grid-auto-rows: minmax(0, 1fr);
+    }
+  }
+  .\[1440px\]\:auto-rows-fr {
+    &:is(1440px) {
+      grid-auto-rows: minmax(0, 1fr);
     }
   }
 }
