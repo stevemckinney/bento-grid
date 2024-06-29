@@ -37,27 +37,27 @@
         <p class="text-white text-center m-0 max-w-prose">Why should you be left out of a cross device writing experience because you’re using a static site? Bureau takes away the pain of manually moving posts to your codebase and gives you the writing experience you need.</p>
       </header>
 
-      <div class="w-full max-w-[1328px] grid grid-cols-12 grid-flow-dense xl:auto-rows-fr gap-4">
-        <section class="@container/section flex flex-col col-span-full lg:col-span-6 row-span-4 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
+      <div class="w-full max-w-[1328px] grid grid-cols-12 grid-flow-dense 2xl:auto-rows-fr gap-4">
+        <section class="@container/section flex flex-col col-span-full md:col-span-6 xl:row-span-4 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
           <div class="p-6 flex flex-1 flex-col gap-4">
             <h3 class="text-cream font-semibold flex flex-col @[17.5rem]:flex-row @[17.5rem]:items-center gap-4 [font-variation-settings:'opsz'_32]">
               <span class="bg-gunmetal-750 ring ring-gunmetal-650 w-10 h-10 flex flex-[0_0_auto] items-center justify-center rounded-full" aria-hidden="true"><svg class="fill-cream" width="24" height="24"><use href="#automated"></svg></span> Automated versioning with Git
             </h3>
             <p class="text-white text-pretty max-w-prose">When you create a new post Bureau automatically creates a branch—keep working on drafts as long as you need. Open a pull request when you’re done and find yourself publishing more than ever.</p>
           </div>
-          <div class="flex justify-center items-end rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 aspect-square sm:aspect-[640/376] overflow-hidden">
-            <img srcset="images/git-versioning.png 1x, images/git-versioning@2x.png 2x" class="object-none object-top h-[calc(100%_-_1rem)] w-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
+          <div class="flex rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 overflow-hidden aspect-[340/376] @md:aspect-[640/376]">
+            <img srcset="images/git-versioning.png 1x, images/git-versioning@2x.png 2x" class="object-none object-[1rem_1rem] @md:object-[center_1rem] w-full h-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
           </div>
         </section>
-        <section class="@container/section flex flex-col col-span-full lg:col-span-6 row-span-4 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
+        <section class="@container/section flex flex-col col-span-full md:col-span-6 xl:row-span-4 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
           <div class="p-6 flex flex-1 flex-col gap-4">
             <h3 class="text-cream font-semibold flex flex-col @[17.5rem]:flex-row @[17.5rem]:items-center gap-4">
               <span class="bg-gunmetal-750 ring ring-gunmetal-650 w-10 h-10 flex flex-[0_0_auto] items-center justify-center rounded-full" aria-hidden="true"><svg class="fill-cream" width="24" height="24"><use href="#autocomplete"></svg></span> Component autocomplete
             </h3>
             <p class="text-white text-pretty max-w-prose">Bureau finds MDX components and autocompletes them for you—taking the best bits of a code editor combined with a beautiful writing experience. Start writing a component for autocomplete or use the menu.</p>
           </div>
-          <div class="flex justify-center items-end rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 overflow-hidden aspect-square sm:aspect-[640/376]">
-            <img srcset="images/component-autocomplete.png 1x, images/component-autocomplete@2x.png 2x" class="object-none object-[50%_60%] w-full h-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
+          <div class="flex rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 overflow-hidden aspect-[340/376] @md:aspect-[640/376]">
+            <img srcset="images/component-autocomplete.png 1x, images/component-autocomplete@2x.png 2x" class="object-none object-[1rem_center] @md:object-[center_60%] w-full h-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
           </div>
         </section>
         <section class="@container/section flex flex-col col-span-full sm:col-span-6 lg:col-span-3 row-span-2 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
@@ -83,8 +83,8 @@
             </h3>
             <p class="text-white text-pretty max-w-prose">It’s pretty tedious starting a new frontmatter post, isn’t it? The editor works with your frontmatter and will generate timestamps, ID’s and more. All with a simple setup—we’ll find your config or generate one with Bureau.</p>
           </div>
-          <div class="flex justify-center items-end rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 aspect-square sm:aspect-[640/376] overflow-hidden">
-            <img srcset="images/frontmatter-templates.png 1x, images/frontmatter-templates@2x.png 2x" class="object-none object-top h-[calc(100%_-_1rem)] w-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
+          <div class="flex rounded-lg bg-gunmetal-800 ring ring-gunmetal-750 aspect-[340/376] @md:aspect-[640/376] overflow-hidden">
+            <img srcset="images/frontmatter-templates.png 1x, images/frontmatter-templates@2x.png 2x" class="object-none object-[1rem_1rem] @md:object-[center_1rem] w-full h-full [mask-image:var(--image-mask-bottom)]" width="468" height="376">
           </div>
         </section>
         <section class="@container/section flex flex-col col-span-full lg:col-span-6 row-span-2 gap-2 p-2 bg-gunmetal-850 ring ring-gunmetal-750 rounded-2xl">
@@ -95,6 +95,7 @@
             <p class="text-white text-pretty max-w-prose">Bureau doesn’t care about the framework you use. Add your Git repository or start a new one and Bureau will look after your content. This is the publishing experience for static websites.</p>
           </div>
         </section>
+
       </div>
     </section>
   </body>
