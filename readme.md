@@ -8,3 +8,6 @@ The repository for the titled post. It’s a very basic setup.
 4. Edit `app.css`
 
 Optionally in a new terminal window run `python3 -m http.server` to see it.
+
+## Read the post
+You can find the post on [https://iamsteve.me/blog/bento-layout-css-grid](iamsteve.me)
