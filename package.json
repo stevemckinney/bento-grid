@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "A bento grid using tailwind, CSS grid and @container queries",
   "scripts": {
-    "build": "parcel build src/*.html",
-    "dev": "parcel src/*.html"
+    "build": "npx @tailwindcss/cli -i app.css -o app.output.css --minify",
+    "dev": "npx @tailwindcss/cli -i app.css -o app.output.css --watch"
   },
   "author": "Steve McKinney",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.0-alpha.15",
-    "tailwindcss": "^4.0.0-alpha.15"
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
   }
 }
